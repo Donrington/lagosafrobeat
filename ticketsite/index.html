@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Concert Night - Event Ticket Booking</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+<div class="loader">
+    <div>
+        <img src="images/icons/preloader.gif" />
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5 left-wrapper">
+            <div class="event-banner-wrapper">
+                <div class="logo">
+                    <h1>Concert Night</h1>
+                </div>
+                <h2>
+                    Afrobeat Night Live<br>
+                    <span>25 December 2024, 6:00 PM</span>
+                </h2>
+                <p>Powered by <a href="http://www.yourcompany.com" target="_blank">YourCompany</a></p>
+            </div>
+        </div>
+        <div class="col-sm-7 right-wrapper">
+            <div class="event-ticket-wrapper">
+                <div class="event-tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#buyTicket" aria-controls="buyTicket" role="tab" data-toggle="tab">Buy Tickets</a></li>
+                        <li role="presentation"><a href="#venue" aria-controls="venue" role="tab" data-toggle="tab">Venue</a></li>
+                        <li role="presentation"><a href="#termCondition" aria-controls="termCondition" role="tab" data-toggle="tab">Terms & Conditions</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="buyTicket">
+                            <div class="row">
+                                <!-- Example Ticket Box for VIP Experience -->
+                                <div class="col-md-6">
+                                    <div class="ticketBox" data-ticket-price="75000">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="ticket-name">
+                                                    VIP Experience
+                                                    <span>Front Row Seats<br>Access to VIP Lounge</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="ticket-price-count-box">
+                                                    <div class="ticket-control">
+                                                        <div class="input-group">
+                                                          <span class="input-group-btn">
+                                                              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                                  <span class="glyphicon glyphicon-minus"></span>
+                                                              </button>
+                                                          </span>
+                                                          <input type="text" name="quant[1]" class="form-control input-number" value="0" min="0" max="10">
+                                                          <span class="input-group-btn">
+                                                              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                                  <span class="glyphicon glyphicon-plus"></span>
+                                                              </button>
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="price">₦75000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-description">
+                                            <p>Exclusive front row seating, complimentary drinks, and snacks, with special access to the VIP lounge for a premium experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- More ticket types -->
+                                <div class="col-md-6">
+                                    <div class="ticketBox" data-ticket-price="50000">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="ticket-name">
+                                                    Premium Seats
+                                                    <span>Close to Stage<br>Free Merchandise</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="ticket-price-count-box">
+                                                    <div class="ticket-control">
+                                                        <div class="input-group">
+                                                          <span class="input-group-btn">
+                                                              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+                                                                  <span class="glyphicon glyphicon-minus"></span>
+                                                              </button>
+                                                          </span>
+                                                          <input type="text" name="quant[2]" class="form-control input-number" value="0" min="0" max="10">
+                                                          <span class="input-group-btn">
+                                                              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                                                                  <span class="glyphicon glyphicon-plus"></span>
+                                                              </button>
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="price">₦50000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-description">
+                                            <p>Enjoy close proximity to the stage with premium seating, plus receive exclusive concert merchandise as a keepsake.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ticketBox" data-ticket-price="30000">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="ticket-name">
+                                                    General Admission
+                                                    <span>Access to All Areas<br>Flexible Seating</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="ticket-price-count-box">
+                                                    <div class="ticket-control">
+                                                        <div class="input-group">
+                                                          <span class="input-group-btn">
+                                                              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+                                                                  <span class="glyphicon glyphicon-minus"></span>
+                                                              </button>
+                                                          </span>
+                                                          <input type="text" name="quant[3]" class="form-control input-number" value="0" min="0" max="10">
+                                                          <span class="input-group-btn">
+                                                              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[3]">
+                                                                  <span class="glyphicon glyphicon-plus"></span>
+                                                              </button>
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="price">₦30000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-description">
+                                            <p>Flexible seating arrangement with access to all general areas, ensuring a comfortable and enjoyable experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="venue">
+                            <h4>Ikeja, Lagos<br>Nigeria<br><br></h4>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15858.227049982422!2d3.3434817!3d6.601838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1598623143167!5m2!1sen!2sng" width="640" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="termCondition">
+                            <h4>Terms and Conditions</h4>
+                            <p>By purchasing a ticket, you agree to the following terms and conditions:</p>
+                            <ul>
+                                <li>Tickets are non-refundable and non-transferable.</li>
+                                <li>Event date, time, and venue are subject to change. We will provide notice of any changes as soon as possible.</li>
+                                <li>Attendees must present a valid ticket for entry. Lost or stolen tickets will not be replaced.</li>
+                                <li>We reserve the right to refuse entry or eject attendees for any reason, including but not limited to, disorderly conduct or security concerns.</li>
+                                <li>Recording or broadcasting the event without prior written permission is strictly prohibited.</li>
+                                <li>Attendees assume all risk and danger incidental to the event, whether occurring prior, during, or after the actual event.</li>
+                            </ul>
+                            <p>We look forward to providing you with an unforgettable experience. Thank you for understanding and adhering to our terms and conditions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p><span class="ticket-count">0</span> Tickets <span class="divider"></span> Total: ₦ <span class="total-amount">0</span></p>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="text-right">
+                                <a class="btn disabled" data-toggle="modal" data-target="#ticket-details">PROCEED</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal right fade" id="ticket-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/icons/cancel.png">
+                </button>
+                <h4 class="modal-title">Your Tickets</h4>
+            </div>
+            <div class="modal-body">
+                <div class="cart-information">
+                    <div class="ticket-type"></div>
+                    <ul>
+                        <li>Tickets: <span class="ticket-count"></span></li>
+                        <li>Price: ₦<span class="ticket-amount"></span></li>
+                        <hr>
+                        <li>Total: ₦<span class="total-amount"></span></li>
+                    </ul>
+                </div>
+
+                <div class="contactForm">
+                    <h3>Share your contact Details</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your Email ID">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Enter your Mobile No.">
+                        </div>
+                        <a type="submit" class="btn">Proceed to Payment</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/allscript.js"></script>
+</body>
+</html>
